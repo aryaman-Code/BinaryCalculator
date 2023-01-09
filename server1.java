@@ -19,7 +19,8 @@ public class server1 {
 
         // to send data to the client
         PrintStream ps= new PrintStream(s.getOutputStream());
-        DataOutputStream dos=new DataOutputStream(s.getOutputStream());
+   //  not valid in 2 way communication   DataOutputStream dos=new DataOutputStream(s.getOutputStream());
+        
         // to read data coming from the client
         BufferedReader br = new BufferedReader( new InputStreamReader(s.getInputStream()));
 
